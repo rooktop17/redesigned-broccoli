@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim | Mavi Akdeniz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">MAVİ<span>AKDENİZ</span></a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="uyeler.html">Üyeler</a>
+        <a href="diskografi.html">Diskografi</a>
+        <a href="konserler.html">Konserler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="rezervasyon.html" class="btn-cta">Rezervasyon</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>İletişim</h1>
+      <p>Sorularınız, basın talepleriniz ve iş birlikleri için.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container booking-grid">
+      <div class="booking-side">
+        <h3>Genel İletişim</h3>
+        <p>📞 +90 533 000 00 00</p>
+        <p>✉️ info@maviakdeniz.com</p>
+        <p>📍 Lefkoşa, Kıbrıs</p>
+
+        <h3>Booking &amp; Sahne</h3>
+        <p>booking@maviakdeniz.com</p>
+
+        <h3>Basın</h3>
+        <p>press@maviakdeniz.com</p>
+
+        <h3>Sosyal Medya</h3>
+        <div class="social-links small">
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social spotify">Spotify</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social instagram">Instagram</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social facebook">Facebook</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social youtube">YouTube</a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social tiktok">TikTok</a>
+        </div>
+      </div>
+
+      <form class="booking-form" onsubmit="event.preventDefault(); document.getElementById('contact-status').textContent='Mesajınız iletildi, teşekkürler!'; this.reset();">
+        <h2>Mesaj Gönderin</h2>
+        <label>Ad Soyad <input type="text" required /></label>
+        <label>E-posta <input type="email" required /></label>
+        <label>Konu <input type="text" required /></label>
+        <label>Mesaj <textarea rows="6" required></textarea></label>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+        <p id="contact-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>© 2026 Mavi Akdeniz. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

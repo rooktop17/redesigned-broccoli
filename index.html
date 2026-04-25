@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mavi Akdeniz | Kıbrıs'ın Sesi</title>
+  <meta name="description" content="Mavi Akdeniz – Kıbrıs merkezli canlı müzik grubu. Konser rezervasyonu, üyeler, diskografi ve sosyal medya bağlantıları." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">MAVİ<span>AKDENİZ</span></a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="uyeler.html">Üyeler</a>
+        <a href="diskografi.html">Diskografi</a>
+        <a href="konserler.html">Konserler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="rezervasyon.html" class="btn-cta">Rezervasyon</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Kıbrıs'tan canlı müzik</p>
+      <h1>MAVİ AKDENİZ</h1>
+      <p class="hero-tagline">Akdeniz'in dalgaları kadar tanıdık, gecenin ritmi kadar canlı.</p>
+      <div class="hero-actions">
+        <a href="rezervasyon.html" class="btn btn-primary">Bizi Sahnenize Davet Edin</a>
+        <a href="diskografi.html" class="btn btn-ghost">Müziğimizi Dinleyin</a>
+      </div>
+      <div id="hero-tonight" class="hero-tonight" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="tonight" id="tonight">
+    <div class="container">
+      <h2>Bu Akşam Neredeyiz?</h2>
+      <div id="tonight-card" class="tonight-card">
+        <div class="tonight-loading">Yükleniyor...</div>
+      </div>
+      <p class="tonight-note">Kayıtlı rezervasyonlara göre otomatik güncellenir.</p>
+    </div>
+  </section>
+
+  <section class="upcoming">
+    <div class="container">
+      <h2>Yaklaşan Konserler</h2>
+      <div id="upcoming-list" class="upcoming-list">
+        <p class="muted">Yaklaşan konserler yükleniyor...</p>
+      </div>
+      <a href="konserler.html" class="btn btn-outline">Tüm Konserleri Gör</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container intro-grid">
+      <div>
+        <h2>Biz Kimiz?</h2>
+        <p>Mavi Akdeniz, 2018 yılında Lefkoşa'da kurulmuş, Kıbrıs'ın yerel sesini modern düzenlemelerle harmanlayan beş kişilik bir canlı müzik grubudur. Düğünlerden festivallere, plaj partilerinden butik mekânlara kadar geniş bir yelpazede sahne alıyoruz.</p>
+        <a href="hakkimizda.html" class="btn btn-outline">Daha Fazlası</a>
+      </div>
+      <div class="intro-stats">
+        <div><strong>200+</strong><span>Sahne</span></div>
+        <div><strong>3</strong><span>Albüm</span></div>
+        <div><strong>5</strong><span>Üye</span></div>
+        <div><strong>8 yıl</strong><span>Tecrübe</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="audiences">
+    <div class="container">
+      <h2>Sizin İçin Buradayız</h2>
+      <p>İster bir akşamı unutulmaz kılmak isteyen müşteri, ister profesyonel bir iş ortağı olun – Mavi Akdeniz'in size sunabileceği bir sayfası var.</p>
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="icon">M</div>
+          <h3>Müşteriler &amp; Misafirler</h3>
+          <p>Düğününüz, doğum gününüz veya özel akşamınız için canlı müzik. Online rezervasyon ile dakikalar içinde tarihinizi ayırın.</p>
+          <a href="rezervasyon.html">Rezervasyon Yap →</a>
+        </article>
+        <article class="audience-card">
+          <div class="icon">İ</div>
+          <h3>Mekân &amp; Etkinlik İşverenleri</h3>
+          <p>Otel, restoran, marina, festival sahnesi… Teknik rider, repertuar setleri, sahne planları ve fiyatlandırma için EPK'mıza göz atın.</p>
+          <a href="epk.html">EPK / Basın Kiti →</a>
+        </article>
+        <article class="audience-card">
+          <div class="icon">S</div>
+          <h3>Markalar &amp; Sponsorlar</h3>
+          <p>Kıbrıs ve Türkiye'de yerel müzik dinleyicisine ulaşın. Marka iş birlikleri, sponsorluk ve özel sahne paketleri.</p>
+          <a href="isbirligi.html">İş Birliği Yap →</a>
+        </article>
+        <article class="audience-card">
+          <div class="icon">N</div>
+          <h3>Müzisyenler &amp; Konuk Sanatçılar</h3>
+          <p>Birlikte sahne almak, jam yapmak veya stüdyoda buluşmak isteyen sanatçılar için açığız. Bize müziğinizi gönderin.</p>
+          <a href="isbirligi.html#muzisyenler">Detaylar →</a>
+        </article>
+        <article class="audience-card">
+          <div class="icon">P</div>
+          <h3>Plak Şirketleri &amp; A&amp;R</h3>
+          <p>Streaming verileri, basın yorumları, demolar ve yüksek çözünürlüklü görseller içeren basın kitimizi indirin.</p>
+          <a href="epk.html">EPK İndir →</a>
+        </article>
+        <article class="audience-card">
+          <div class="icon">F</div>
+          <h3>Dinleyiciler &amp; Hayranlar</h3>
+          <p>Bir sonraki konserimize katılın, yeni şarkılarımızı keşfedin, bültenimize abone olun ve sahne arkasından paylaşımları kaçırmayın.</p>
+          <a href="konserler.html">Konserlere Bak →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-cta">
+    <div class="container">
+      <h2>Bizi Takip Edin</h2>
+      <div class="social-links">
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social spotify">Spotify</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social instagram">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social facebook">Facebook</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social youtube">YouTube</a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social tiktok">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MAVİ AKDENİZ</h3>
+        <p>Kıbrıs / Lefkoşa</p>
+        <p>info@maviakdeniz.com</p>
+        <p>+90 533 000 00 00</p>
+      </div>
+      <div>
+        <h4>Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="uyeler.html">Üyeler</a></li>
+          <li><a href="diskografi.html">Diskografi</a></li>
+          <li><a href="konserler.html">Konserler</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="rezervasyon.html">Rezervasyon</a></li>
+          <li><a href="epk.html">EPK / Basın Kiti</a></li>
+          <li><a href="isbirligi.html">İş Birliği</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bülten</h4>
+        <p>Yeni şarkılarımız ve konserlerimizden haberdar olun.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('input').value=''; alert('Aboneliğiniz alındı, teşekkürler!');">
+          <input type="email" placeholder="E-posta" required />
+          <button type="submit">Abone Ol</button>
+        </form>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>© 2026 Mavi Akdeniz. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

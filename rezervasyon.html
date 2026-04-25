@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezervasyon | Mavi Akdeniz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">MAVİ<span>AKDENİZ</span></a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="uyeler.html">Üyeler</a>
+        <a href="diskografi.html">Diskografi</a>
+        <a href="konserler.html">Konserler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="rezervasyon.html" class="btn-cta active">Rezervasyon</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Online Rezervasyon</h1>
+      <p>Etkinliğinizin detaylarını paylaşın, en kısa sürede size dönelim.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container booking-grid">
+      <form id="booking-form" class="booking-form" novalidate>
+        <h2>Rezervasyon Formu</h2>
+
+        <div class="form-row">
+          <label>
+            Ad Soyad *
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Telefon *
+            <input type="tel" name="phone" required placeholder="+90 5XX XXX XX XX" />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            E-posta *
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Etkinlik Türü *
+            <select name="eventType" required>
+              <option value="">Seçiniz</option>
+              <option>Düğün</option>
+              <option>Nişan / Kına</option>
+              <option>Doğum Günü</option>
+              <option>Festival / Açık Hava</option>
+              <option>Otel / Restoran</option>
+              <option>Kurumsal Etkinlik</option>
+              <option>Diğer</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Tarih *
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Başlangıç Saati *
+            <input type="time" name="time" required />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Mekân Adı *
+            <input type="text" name="venue" required placeholder="Örn: Salamis Bay Conti Hotel" />
+          </label>
+          <label>
+            Şehir *
+            <select name="city" required>
+              <option value="">Seçiniz</option>
+              <option>Lefkoşa</option>
+              <option>Girne</option>
+              <option>Mağusa</option>
+              <option>Güzelyurt</option>
+              <option>İskele</option>
+              <option>Lefke</option>
+              <option>Diğer</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Sahne Süresi (saat)
+          <input type="number" name="duration" min="1" max="8" step="0.5" placeholder="Örn: 3" />
+        </label>
+
+        <label>
+          Tahmini Misafir Sayısı
+          <input type="number" name="guests" min="1" placeholder="Örn: 150" />
+        </label>
+
+        <label>
+          Notlar
+          <textarea name="notes" rows="4" placeholder="Repertuar tercihleri, sahne ölçüleri, ses sistemi durumu vb."></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="public" checked />
+          <span>Bu konseri ana sayfada herkese duyurabilirsiniz.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary">Rezervasyon Talebi Gönder</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <aside class="booking-side">
+        <h3>Nasıl Çalışır?</h3>
+        <ol>
+          <li>Formu doldurup gönderin.</li>
+          <li>24 saat içinde uygunluk durumunu teyit edelim.</li>
+          <li>Sözleşme ve ön ödeme sonrası tarih kesinleşir.</li>
+          <li>Kesinleşen konseriniz, eğer onayladıysanız, ana sayfadaki <em>"Bu Akşam Neredeyiz?"</em> ekranında otomatik gösterilir.</li>
+        </ol>
+
+        <h3>Fiyatlandırma</h3>
+        <p>Etkinliğin türü, süresi, mekânı ve teknik gereksinimlerine göre özel teklif hazırlıyoruz. Akustik trio, tam grup ve DJ destekli setlerimiz mevcuttur.</p>
+
+        <h3>Doğrudan İletişim</h3>
+        <p>📞 +90 533 000 00 00</p>
+        <p>✉️ booking@maviakdeniz.com</p>
+        <p>📍 Lefkoşa, Kıbrıs</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>© 2026 Mavi Akdeniz. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
