@@ -18,6 +18,33 @@
     .consensus h3 { color:#fff; font-size:1.6rem; }
     .consensus .jingle { color:#fff; }
     .consensus .style-note { color:#cdeeec; }
+
+    /* ---- Sonic boom player ---- */
+    .player {
+      max-width:640px; margin:1.5rem auto 0; text-align:center;
+      background:#0a1929; color:#fff; border-radius:18px; padding:2rem 1.6rem;
+      border:1px solid rgba(56,173,169,0.35);
+    }
+    .player h3 { color:#fff; }
+    .player p.hint { color:#8fa6b5; font-size:0.9rem; margin:0 0 1.2rem; }
+    #play-jingle {
+      background:#38ada9; color:#06231f; border:0; cursor:pointer;
+      font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.08em;
+      padding:0.7rem 2rem; border-radius:999px; transition:transform .15s, background .2s;
+    }
+    #play-jingle:hover:not(:disabled) { transform:translateY(-2px); background:#4fd0cb; }
+    #play-jingle:disabled { opacity:0.85; cursor:default; }
+    .jingle-lines { list-style:none; padding:0; margin:1.6rem auto 0; max-width:420px; }
+    .jingle-lines li.jingle-line {
+      padding:0.5rem 0.8rem; border-radius:10px; margin:0.25rem 0;
+      font-size:1.05rem; color:#9fb3c0; transition:all .2s;
+      border:1px solid transparent;
+    }
+    .jingle-lines li.jingle-line.active {
+      color:#fff; background:rgba(56,173,169,0.18);
+      border-color:rgba(56,173,169,0.5); transform:scale(1.03);
+      box-shadow:0 0 24px -6px rgba(56,173,169,0.6);
+    }
   </style>
 </head>
 <body>
@@ -328,6 +355,18 @@ Tek bir isim: Hızlı O!
 İşini hızlı bitir!
 Hızlı O! Hızlı O!</p>
       </div>
+
+      <div class="player">
+        <h3>🔊 Sonic Boom — Nakaratı Dinle</h3>
+        <p class="hint">Konseyin seçtiği nakarat, notalara döküldü. Bir "boom" ile başlar, kulağa kazınır. (Tarayıcı sesini açın.)</p>
+        <button id="play-jingle" type="button">▶&nbsp;&nbsp;Çal</button>
+        <ul class="jingle-lines">
+          <li class="jingle-line">Hızlı O! Hızlı O!</li>
+          <li class="jingle-line">Bas telefona — gelsin o!</li>
+          <li class="jingle-line">Kurye o, kargo o,</li>
+          <li class="jingle-line">Kapına kadar — hızlı o!</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -343,5 +382,6 @@ Hızlı O! Hızlı O!</p>
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/jingle.js"></script>
 </body>
 </html>
