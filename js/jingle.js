@@ -18,24 +18,27 @@
   /* Jingle satırları – [nota, vuruş] dizileri. REST = sus. */
   const SECTIONS = [
     {
-      label: 'Hızlı O! Hızlı O!',
-      notes: [['G4', 0.75], ['G4', 0.75], ['C5', 1.4], ['REST', 0.2],
-              ['G4', 0.75], ['G4', 0.75], ['E5', 1.4], ['REST', 0.4]],
+      // Bas-te-le-fo-na gel-sin o  (yükselen)
+      label: 'Bas telefona, gelsin o!',
+      notes: [['G4', 0.75], ['G4', 0.75], ['A4', 0.75], ['A4', 0.75],
+              ['B4', 0.75], ['C5', 0.75], ['D5', 0.75], ['C5', 1.4], ['REST', 0.3]],
     },
     {
-      label: 'Bas telefona — gelsin o!',
-      notes: [['E5', 0.75], ['E5', 0.75], ['D5', 0.75], ['C5', 0.75],
-              ['D5', 0.75], ['E5', 0.75], ['D5', 0.75], ['C5', 1.6], ['REST', 0.4]],
+      // "Ooo Hızlı O!" – yüksek inişli viral kanca
+      label: 'Ooo — Hızlı O!',
+      notes: [['G5', 1.3], ['G5', 0.75], ['E5', 0.75], ['C5', 1.8], ['REST', 0.4]],
     },
     {
+      // Ku-rye o, kar-go o  (sıçrayan)
       label: 'Kurye o, kargo o,',
-      notes: [['C5', 0.75], ['D5', 0.75], ['E5', 1.2], ['REST', 0.3],
-              ['C5', 0.75], ['D5', 0.75], ['C5', 1.2], ['REST', 0.4]],
+      notes: [['C5', 0.75], ['C5', 0.75], ['G4', 1.0], ['REST', 0.2],
+              ['A4', 0.75], ['A4', 0.75], ['G4', 1.2], ['REST', 0.3]],
     },
     {
-      label: 'Kapına kadar — hızlı o!',
+      // Ge-ce gün-düz yol-da o  (yükselip çözülen)
+      label: 'Gece gündüz yolda o!',
       notes: [['G4', 0.75], ['A4', 0.75], ['B4', 0.75], ['C5', 0.75],
-              ['D5', 0.75], ['E5', 0.75], ['D5', 0.75], ['C5', 2.2]],
+              ['D5', 0.75], ['E5', 0.9], ['C5', 2.0]],
     },
   ];
 

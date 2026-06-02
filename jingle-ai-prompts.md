@@ -4,13 +4,14 @@ KKTC kurye-kargo markası **Hızlı O!** için Türk Besteciler Konseyi'nin seç
 nakaratı, AI müzik/ses araçlarında üretmek için hazır prompt'lar. Hepsi
 kopyala-yapıştır içindir.
 
-> Konsey nakaratı (referans):
+> Konsey nakaratı (referans — viral kanca):
 > ```
-> Hızlı O! Hızlı O!
 > Bas telefona, gelsin o!
+> Ooo, Hızlı O!
 > Kurye o, kargo o,
-> Kapına kadar, hızlı o!
+> Gece gündüz yolda o!
 > ```
+> Püf noktası: **her dize "-o" ile biter** (marka = Hızlı O) → kulağa kazınan kafiye.
 
 ---
 
@@ -31,32 +32,57 @@ upbeat Turkish pop advertising jingle, catchy radio jingle, energetic, mixed mal
 **Lyrics:**
 ```
 [Intro]
-(deep boom) Hızlı O!
+(deep boom) Ooo... Hızlı O!
 
 [Chorus]
-Hızlı O! Hızlı O!
 Bas telefona, gelsin o!
+Ooo, Hızlı O!
 Kurye o, kargo o,
-Kapına kadar, hızlı o!
+Gece gündüz yolda o!
 
-[Verse]
-Gece gündüz yolda o,
-KKTC'nin gücü o.
+[Verse 1]
+Çağır hemen, gelsin o,
+Dakikada kapında o!
+Hem güvenli hem hızlı o,
+Yeniliğin adı o!
+
+[Pre-Chorus]
+Kapı kapı gezen o,
+KKTC'nin gücü o!
+
+[Chorus - call & response]
 Kim yetişir anında?
+Kim gelir tam zamanında?
+Sor herkese bu şehirde —
 Tek bir isim: Hızlı O!
+
+[Chorus]
+Bas telefona, gelsin o!
+Ooo, Hızlı O!
+Kurye o, kargo o,
+Gece gündüz yolda o!
+
+[Verse 2]
+Şehrin yeni ritmi o,
+Paket, koli, sipariş —
+Hepsine çözüm o!
+Bir bakmışsın kapında,
+Hızlı O hep yanında!
 
 [Bridge]
 Al getir, kap götür,
 İşini hızlı bitir!
 
-[Chorus]
-Hızlı O! Hızlı O!
+[Final Chorus]
+Ooo, Hızlı O!
 Bas telefona, gelsin o!
-Kurye o, kargo o,
-Kapına kadar, hızlı o!
+Kapı kapı gezen o,
+KKTC'nin gücü o!
+Kim yetişir anında?
+Herkes der ki: HIZLI O!
 
 [Outro]
-(claps) Hızlı O!... Hızlı O!
+(claps) HIZLI O!... HIZLI O!
 ```
 
 > İpucu: 15–20 sn'lik kısa spot istiyorsanız sadece **[Intro] + [Chorus] + [Outro]**
@@ -116,13 +142,14 @@ About 20 seconds, anthemic, extremely catchy and memorable, clean modern mix.
 
 **Lyrics (varsa "Add lyrics" alanına):**
 ```
-Hızlı O! Hızlı O!
 Bas telefona, gelsin o!
+Ooo, Hızlı O!
 Kurye o, kargo o,
-Kapına kadar, hızlı o!
-Gece gündüz yolda o,
-KKTC'nin gücü o.
-Tek bir isim: Hızlı O!
+Gece gündüz yolda o!
+Kapı kapı gezen o,
+KKTC'nin gücü o!
+Kim yetişir anında?
+Herkes der ki: Hızlı O!
 ```
 
 ---
