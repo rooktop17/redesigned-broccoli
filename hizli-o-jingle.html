@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hızlı O! Jingle Atölyesi | Türk Besteciler Konseyi</title>
+  <meta name="description" content="Türk Besteciler Konseyi, KKTC'nin kurye-kargo markası 'Hızlı O!' için jingle'ı yeniden üretiyor. Her persona kendi tarzında yorumladı; konsey ortak kararla en akılda kalan versiyonu seçti." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .jingle { white-space: pre-line; font-style: italic; }
+    .jingle .style-note { font-style: normal; display:block; color:#888; font-size:0.8rem; margin-bottom:0.6rem; text-transform:uppercase; letter-spacing:0.12em; }
+    .consensus {
+      background: linear-gradient(135deg,#0a3d62,#38ada9); color:#fff;
+      border-radius:18px; padding:2rem; max-width:640px; margin:1.5rem auto 0;
+      box-shadow:0 20px 50px -20px rgba(10,61,98,0.5);
+    }
+    .consensus h3 { color:#fff; font-size:1.6rem; }
+    .consensus .jingle { color:#fff; }
+    .consensus .style-note { color:#cdeeec; }
+
+    /* ---- Sonic boom player ---- */
+    .player {
+      max-width:640px; margin:1.5rem auto 0; text-align:center;
+      background:#0a1929; color:#fff; border-radius:18px; padding:2rem 1.6rem;
+      border:1px solid rgba(56,173,169,0.35);
+    }
+    .player h3 { color:#fff; }
+    .player p.hint { color:#8fa6b5; font-size:0.9rem; margin:0 0 1.2rem; }
+    #play-jingle {
+      background:#38ada9; color:#06231f; border:0; cursor:pointer;
+      font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.08em;
+      padding:0.7rem 2rem; border-radius:999px; transition:transform .15s, background .2s;
+    }
+    #play-jingle:hover:not(:disabled) { transform:translateY(-2px); background:#4fd0cb; }
+    #play-jingle:disabled { opacity:0.85; cursor:default; }
+    .jingle-lines { list-style:none; padding:0; margin:1.6rem auto 0; max-width:420px; }
+    .jingle-lines li.jingle-line {
+      padding:0.5rem 0.8rem; border-radius:10px; margin:0.25rem 0;
+      font-size:1.05rem; color:#9fb3c0; transition:all .2s;
+      border:1px solid transparent;
+    }
+    .jingle-lines li.jingle-line.active {
+      color:#fff; background:rgba(56,173,169,0.18);
+      border-color:rgba(56,173,169,0.5); transform:scale(1.03);
+      box-shadow:0 0 24px -6px rgba(56,173,169,0.6);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">MAVİ<span>AKDENİZ</span></a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="uyeler.html">Üyeler</a>
+        <a href="besteciler-konseyi.html">Konsey</a>
+        <a href="diskografi.html">Diskografi</a>
+        <a href="konserler.html">Konserler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="rezervasyon.html" class="btn-cta">Rezervasyon</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>"Hızlı O!" Jingle Atölyesi</h1>
+      <p>Türk Besteciler Konseyi, KKTC'nin kurye-kargo markası <strong>Hızlı O!</strong> için jingle'ı yeniden üretti. Her persona kendi tarzında yorumladı; sonunda konsey ortak kararla en akılda kalan versiyonu seçti.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container narrow">
+      <h2>Konseyin Görevi</h2>
+      <p>Markanın orijinal jingle'ı enerjik ama uzun ve dağınıktı; kafiyeler ve ritim yer yer düşüyordu. Konsey <strong>ortak kararla</strong> üç kuralda buluştu: <strong>(1)</strong> her dize markanın adıyla, yani <strong>"-o" sesiyle</strong> bitecek (Hızlı <strong>O</strong> = doğal, kulağa kazınan kafiye); <strong>(2)</strong> her dörtlük <strong>tutarlı hece/ritimde</strong>, ritim hiç düşmeyecek; <strong>(3)</strong> ilk dinleyişte ezberlenecek. Aşağıda her persona bu kurallara göre kendi imzasını attı; en altta konsey mutabakatı (tam jingle) yer alıyor.</p>
+    </div>
+  </section>
+
+  <!-- ===== KANAT I ===== -->
+  <section class="content" style="padding-top:1rem;">
+    <div class="container">
+      <h2>I. Kanat — Aranjman &amp; Klasik Pop Divanı</h2>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <h3>Fecri Ebcioğlu</h3>
+          <p class="role">Aranjman Öncüsü</p>
+          <p class="jingle"><span class="style-note">Yabancı ezgi · Türkçe söz</span>Yabancı ezgiye Türkçe söz o,
+Radyoların en hızlısı o.
+Bir düğme yeter, yola çıkar o —
+Kapında biter her iş: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Fikret Şeneş</h3>
+          <p class="role">Söz Yazarı</p>
+          <p class="jingle"><span class="style-note">Edebi pop sözü</span>Şehre ışık gibi düşer o,
+Beklenen haberi getirir o.
+Lefkoşa, Girne demeden gezer o —
+Umudu taşıyan tek: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Onno Tunç</h3>
+          <p class="role">Caz Aranjör</p>
+          <p class="jingle"><span class="style-note">Swing aranjman · scat</span>Swing'le salınır, naziktir o,
+Akşamın ritmine ortaktır o.
+Bir tık, bir nefes — yoldadır o,
+Caz kadar zarif: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Attila Özdemiroğlu</h3>
+          <p class="role">Orkestratör</p>
+          <p class="jingle"><span class="style-note">Senfonik aranjman</span>Yaylılar yükselir, görkemli o,
+Her pakette bir senfoni o.
+Tempolu davul, kusursuz o —
+İhtişamla gelir: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Aysel Gürel</h3>
+          <p class="role">Söz Yazarı · Mizah</p>
+          <p class="jingle"><span class="style-note">Eğlenceli slogan</span>Hadi bakalım, gelsin o!
+Dakikada kapıda o!
+Kurye mi, kargo mu? Hepsi o —
+Bas tuşa canım: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Selami Şahin</h3>
+          <p class="role">Besteci</p>
+          <p class="jingle"><span class="style-note">Sade, akılda kalan melodi</span>Bir ararsın, gülerek gelir o,
+Koli koli sevgi getirir o.
+Tatlı dilli, güleç yüzlü o —
+Kapında biter iş: Hızlı O!</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KANAT II ===== -->
+  <section class="content" style="padding-top:1rem;background:#0a1929;color:#fff;">
+    <div class="container">
+      <h2 style="color:#fff;">II. Kanat — Anadolu Rock &amp; Arabesk Ocağı</h2>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <h3>Barış Manço</h3>
+          <p class="role">Konsey Başı</p>
+          <p class="jingle"><span class="style-note">Masalsı anlatı · 7'den 77'ye</span>Dağ demez, bayır demez, yoldadır o,
+7'den 77'ye dosttur o.
+Ne dilersen kapına taşır o —
+Masal kadar tatlı: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Erkin Koray</h3>
+          <p class="role">Psychedelic Saz</p>
+          <p class="jingle"><span class="style-note">Distortion'lu electro saz</span>Damarda elektrik, akımdır o,
+Durmaz, dinmez, hızlı nabızdır o.
+Sazdan fışkırır, şimşektir o —
+Karanlığı yaran: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Cem Karaca</h3>
+          <p class="role">Toplumcu Rock</p>
+          <p class="jingle"><span class="style-note">Gür ses · halkın emeği</span>Emeği omzunda taşır o,
+Kapı kapı halka ulaşır o.
+Ne yağmur dinler ne yorulur o —
+Şehrin nasırlı eli: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Ferdi Tayfur</h3>
+          <p class="role">Arabesk Üstadı</p>
+          <p class="jingle"><span class="style-note">Dertli ama umutlu</span>Yıllarca bekledim, geldi o,
+Garip gönlüme derman oldu o.
+Bir paket umut bıraktı o —
+Yaramı saran: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Zülfü Livaneli</h3>
+          <p class="role">Ozan · Besteci</p>
+          <p class="jingle"><span class="style-note">Türkü tadında</span>Bir tel üstünde gezer o,
+Köyden kasabaya eser o.
+Sazı vurduk mu, ulaşır o —
+Muradı getiren: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Şebnem Ferah</h3>
+          <p class="role">Rock</p>
+          <p class="jingle"><span class="style-note">Patlayan gitar riff'i</span>Gök gürler, fırtına kopar o,
+Hiçbir yol durduramaz o.
+Kapına riff gibi çakar o —
+Tek nefeste biter: Hızlı O!</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KANAT III ===== -->
+  <section class="content" style="padding-top:1rem;">
+    <div class="container">
+      <h2>III. Kanat — Modern Pop Meclisi</h2>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <h3>Sezen Aksu</h3>
+          <p class="role">Pop'un Mimarı</p>
+          <p class="jingle"><span class="style-note">Akılda kalan nakarat</span>Bir tık yeter, uçar gelir o,
+Minik serçem gibi sever o.
+Işık olur, kapına iner o —
+La la la, getirir: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Serdar Ortaç</h3>
+          <p class="role">Dans-Pop</p>
+          <p class="jingle"><span class="style-note">Hızlı tempo</span>Kalbim atar hızlı, döner o,
+Bas tuşa — şehri çevirir o.
+Gece boyu dans eder o —
+Hop hop gelir: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Kenan Doğulu</h3>
+          <p class="role">Funk-Pop</p>
+          <p class="jingle"><span class="style-note">Funky groove</span>Groove'la gelir, salınır o,
+Ritme uyar, yakalanır o.
+Şıkıdım kapına dayanır o —
+Dans ettirir: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Mustafa Sandal</h3>
+          <p class="role">R&amp;B-Pop</p>
+          <p class="jingle"><span class="style-note">Smooth remix</span>Smooth bir geçişle yanaşır o,
+Sınır tanımaz, ulaşır o.
+Remix gibi akar, taşır o —
+Dünyaya yayılır: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Yıldız Tilbe</h3>
+          <p class="role">Arabesk-Pop</p>
+          <p class="jingle"><span class="style-note">Doğaçlama tavır</span>Söz verir, sözünde durur o,
+Naz yapmaz, tam vaktinde gelir o.
+Bekletmez, kapında bulunur o —
+Gönlünce taşır: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Teoman</h3>
+          <p class="role">Alternatif · Şiirsel</p>
+          <p class="jingle"><span class="style-note">Melankolik ironi</span>Gecenin sonunda gelir o,
+Sessiz sokakta tek ışık o.
+Bir paket bırakır, gider o —
+En sadık dostun: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Ersay Üner</h3>
+          <p class="role">Modern Pop</p>
+          <p class="jingle"><span class="style-note">Sıcak, ferah ton</span>Güneşli bir sesle güler o,
+Zili çalar, selam verir o.
+İçten, yakın, hızlı gelir o —
+Güne renk katar: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Mabel Matiz</h3>
+          <p class="role">Alternatif Pop</p>
+          <p class="jingle"><span class="style-note">Geleneksel motif</span>Seher gibi düşer eşiğe o,
+Eski türküyle örer yeniyi o.
+Su gibi akar, kapını bezer o —
+Toprağın sesi: Hızlı O!</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KANAT IV ===== -->
+  <section class="content" style="padding-top:1rem;background:#0a1929;color:#fff;">
+    <div class="container">
+      <h2 style="color:#fff;">IV. Kanat — Rap &amp; Yeni Nesil Kürsüsü</h2>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <h3>Ceza</h3>
+          <p class="role">Türkçe Rap Öncüsü</p>
+          <p class="jingle"><span class="style-note">Hızlı flow</span>Hız bende, ritim bende — gelir o,
+Tık-tık bas, şimşek gibi geçer o.
+Kapı kapı, koli koli eser o —
+KKTC tek ses: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Ezhel</h3>
+          <p class="role">Melodik Trap</p>
+          <p class="jingle"><span class="style-note">Autotune · melodik akış</span>Bi' tık attım, düştü cebe o,
+Gece gündüz akıyo' hep o.
+Melodik bi' hızla gelir o —
+Adada tek geçer: Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Norm Ender</h3>
+          <p class="role">Rap · İroni</p>
+          <p class="jingle"><span class="style-note">İronik, keskin</span>Herkes yavaş, bi' tek değil o,
+"Beklemek" yok sözlüğünde o.
+Lafı uzatmaz, hemen gelir o —
+En sadık dostun: Hızlı O!</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KISKANÇ DÜELLO ===== -->
+  <section class="content" style="padding-top:1rem;">
+    <div class="container">
+      <h2>Kıskanç Düello — 3 Usta, 3 Jingle</h2>
+      <p class="muted" style="max-width:780px;margin-bottom:1.5rem;">Konsey sordu: "Bu üçü, birbirini kıskanarak, herkesi geçecek <em>kendi</em> jingle'ını yazsa ne olurdu?" Barış Manço, Erkin Koray ve Kenan Doğulu kollarını sıvadı — sözlerin arasına birbirlerine attıkları ince göndermelere dikkat.</p>
+      <div class="members-grid">
+
+        <article class="member-card">
+          <h3>Barış Manço</h3>
+          <p class="role">"Dağ Bayır Hızlı O" · Masalsı Anadolu Rock</p>
+          <p class="jingle"><span class="style-note">Bağlama + groovy bas, sıcak anlatı</span>Bir varmış bir yokmuş, evvel zaman içinde,
+Bir kurye varmış, koşarmış her işe.
+Dağ dememiş bayır dememiş, düşmüş yola o,
+7'den 77'ye sevilmiş: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Nakarat</span>Bas telefona, gelsin o,
+Domates, kitap — ne dilersen o.
+Gece yıldız, gündüz güneş, hep yolda o,
+Dilden dile dolaşır: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Nasihat</span>Acele işe şeytan karışır derler ya,
+Bu işin şeytanı yok — güveni tam o.
+Beklemezsin sabırla, kapında bulursun,
+Komşunun bile imrendiği: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Çıkış</span>Al getir, kap götür, helal olsun sana,
+Eyvallah Hızlı O — selam KKTC'ye!
+Dome dome... Hızlı O!</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Erkin Koray</h3>
+          <p class="role">"Elektrik Hız" · Psychedelic Electro Saz</p>
+          <p class="jingle"><span class="style-note">Distortion'lu saz, wah-wah, hipnotik tekrar</span>Elektrik... elektrik... damarımda akım,
+Şehir uyumaz, durmaz o — sakın.
+
+<span class="style-note" style="margin-top:0.8rem;">Nakarat (trance)</span>Hızlı O, Hızlı O... (eko: O... O... O)
+Telefona bas — yarıp geçer şehri o.
+Kurye o, kargo o, hız bir tutku o,
+Karanlıkta bir kıvılcım: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Saz Solo</span>(saz haykırır, wah-wah)
+Ne masal ne pop — bu bir akım,
+Bağlamadan fışkırır, durdurulamaz hız!
+
+<span class="style-note" style="margin-top:0.8rem;">Bölüm</span>Gece gündüz titrer yolun telleri,
+Kapına çakar şimşek — kopmaz tek bir kablo.
+Hız illüzyon değil, gerçeğin ta kendisi o,
+KKTC'nin elektriği: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Outro (fade)</span>Hızlı O... hızlı o... hızlı o...</p>
+        </article>
+
+        <article class="member-card">
+          <h3>Kenan Doğulu</h3>
+          <p class="role">"Hızlı O (Aşkına)" · Funk-Pop Groove</p>
+          <p class="jingle"><span class="style-note">Slap bas, wah gitar, şıkıdım ritim</span>Hey! (funk bas) Hazır mısın? Şıkıdım!
+Bu ritim seni kapına götürür — gel bakalım.
+
+<span class="style-note" style="margin-top:0.8rem;">Nakarat (dans)</span>Hızlı O, baby, hızlı o,
+Bas telefona — dans ederek gelsin o!
+Kurye o, kargo o, groove'u tut sıkı o,
+Kalçandan kapına: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Bölüm (flörtöz)</span>Naz yapma, beklersen yazık olur sana,
+Bir tık at, gözünü aç — kapında o, aşkım.
+Hem hızlı hem şık, hem de tatlı o,
+Sevdayı kapına taşır: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Köprü</span>Ne masal anlatır ne kafa karıştırır,
+Sadece dans ettirir — işte budur o!
+Gece gündüz funk gibi akar yolda o,
+KKTC sallanıyor: Hızlı O!
+
+<span class="style-note" style="margin-top:0.8rem;">Çıkış</span>Al getir, kap götür, kıvır kıvır bitir,
+Şıkıdım Hızlı O — herkes peşinde o!</p>
+        </article>
+
+      </div>
+      <p class="muted" style="margin-top:1.2rem;font-size:0.9rem;">Göndermeler: Erkin Koray "<em>ne masal ne pop</em>" derken Manço'nun masalına ve Kenan'ın pop'una; Kenan "<em>ne masal anlatır ne kafa karıştırır</em>" derken Manço'ya ve Erkin'in psychedelia'sına göz kırpıyor. Manço ise herkesi "<em>imrendiği</em>" tek kelimeyle yanıtlıyor.</p>
+    </div>
+  </section>
+
+  <!-- ===== ORTAK KARAR ===== -->
+  <section class="content">
+    <div class="container">
+      <h2 style="text-align:center;">Konsey Mutabakatı — Ortak Karar</h2>
+      <p class="muted" style="text-align:center;max-width:680px;margin:0 auto;">23 persona oy verdi. En kolay ezberlenen, en ritmik ve en "kulağa hoş gelen" ortak versiyon: kısa nakarat, 7–8 heceli diziler, güçlü tekrar.</p>
+      <div class="consensus">
+        <h3>Hızlı O! — Konsey Versiyonu (Tam Jingle)</h3>
+        <p class="jingle"><span class="style-note">Giriş</span>Ooo... Hızlı O!
+(boom) Hızlı O!
+
+<span class="style-note" style="margin-top:1rem;">Nakarat</span>Bas telefona, gelsin o!
+Ooo, Hızlı O!
+Kurye o, kargo o,
+Gece gündüz yolda o!
+
+<span class="style-note" style="margin-top:1rem;">Bölüm 1</span>Çağır hemen, gelsin o,
+Dakikada kapında o!
+Hem güvenli hem hızlı o,
+Yeniliğin adı o!
+
+<span class="style-note" style="margin-top:1rem;">Köprü</span>Kapı kapı gezen o,
+KKTC'nin gücü o!
+
+<span class="style-note" style="margin-top:1rem;">Soru Nakaratı (tezahürat)</span>Kim yetişir anında?
+Kim gelir tam zamanında?
+Sor herkese bu şehirde —
+Tek bir isim: Hızlı O!
+
+<span class="style-note" style="margin-top:1rem;">Nakarat</span>Bas telefona, gelsin o!
+Ooo, Hızlı O!
+Kurye o, kargo o,
+Gece gündüz yolda o!
+
+<span class="style-note" style="margin-top:1rem;">Bölüm 2</span>Şehrin yeni ritmi o,
+Paket, koli, sipariş —
+Hepsine çözüm o!
+Bir bakmışsın kapında,
+Hızlı O hep yanında!
+
+<span class="style-note" style="margin-top:1rem;">Çıkış</span>Al getir, kap götür,
+İşini hızlı bitir!
+
+<span class="style-note" style="margin-top:1rem;">Final Nakaratı</span>Ooo, Hızlı O!
+Bas telefona, gelsin o!
+Kapı kapı gezen o,
+KKTC'nin gücü o!
+Kim yetişir anında?
+Herkes der ki: HIZLI O!
+
+<span class="style-note" style="margin-top:1rem;">Outro</span>HIZLI O!
+HIZLI O!</p>
+      </div>
+
+      <div class="player">
+        <h3>🔊 Sonic Boom — Nakaratı Dinle</h3>
+        <p class="hint">Konseyin seçtiği nakarat, notalara döküldü. Bir "boom" ile başlar, kulağa kazınır. (Tarayıcı sesini açın.)</p>
+        <button id="play-jingle" type="button">▶&nbsp;&nbsp;Çal</button>
+        <ul class="jingle-lines">
+          <li class="jingle-line">Bas telefona, gelsin o!</li>
+          <li class="jingle-line">Ooo — Hızlı O!</li>
+          <li class="jingle-line">Kurye o, kargo o,</li>
+          <li class="jingle-line">Gece gündüz yolda o!</li>
+        </ul>
+        <p class="hint" style="margin:1.4rem 0 0;">Gerçek stüdyo kalitesi için
+          <a href="jingle-ai-prompts.md" style="color:#4fd0cb;">Suno &amp; ElevenLabs prompt paketi</a>
+          (kopyala-yapıştır hazır sözler + stil tarifleri).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-cta">
+    <div class="container">
+      <a href="besteciler-konseyi.html" class="btn btn-outline">← Konseye Dön</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>© 2026 Mavi Akdeniz. Tüm hakları saklıdır. · "Hızlı O!" jingle yorumları, persona stillerine bir saygı duruşudur.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/jingle.js"></script>
+</body>
+</html>
